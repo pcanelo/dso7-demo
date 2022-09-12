@@ -1,4 +1,4 @@
-# Secure Pipelines Demo
+#   Demostracion de un pipeline seguro
 
 Sample spring application with Jenkins pipeline script to demonstrate secure pipelines
 
@@ -107,3 +107,8 @@ Refer the below screenshot for the stages in the pipeline
 ### TODO
 
 Image Malware scanning - [ClamAV](https://github.com/openbridge/clamav)
+
+### TRIVY
+sudo docker run -v /var/run/docker.sock:/var/run/docker.sock aquasec/trivy image dso7-demo:latest 
+
+
