@@ -20,8 +20,8 @@ pipeline {
           steps {
             container('trufflehog') {
               sh 'git clone ${GIT_URL}'
-              sh 'cd secure-pipeline-java-demo && ls -al'
-              sh 'cd secure-pipeline-java-demo && trufflehog .'
+              sh 'cd dso7-demo && ls -al'
+              sh 'cd dso7-demo && trufflehog .'
               sh 'rm -rf secure-pipeline-java-demo'
             }
           }
